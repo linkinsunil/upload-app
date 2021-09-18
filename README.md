@@ -1,6 +1,6 @@
 # upload-app
 
-###dependencies:
+### dependencies:
 
 create folder
 npm init -y
