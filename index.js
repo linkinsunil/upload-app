@@ -26,7 +26,7 @@ app.use('/uploads', express.static('uploads'));
 app.post('/profile-upload-single', upload.single('profile-file'), function (req, res, next) {
   // req.file is the `profile-file` file
   // req.body will hold the text fields, if there were any
-//   console.log(JSON.stringify(req.file))
+  console.log(JSON.stringify(req.file))
   var response = '<a href="/">Home</a><br>'
   response += "Files uploaded successfully.<br>"
   response += `<img src="${req.file.path}" /><br>`
